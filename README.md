@@ -1,4 +1,3 @@
-
 # Requirements to run
 
 Ensure that the MPICH module is loaded. If it is not, the script will stop.
@@ -11,13 +10,29 @@ bash ./build.sh
 
 Changes to the Makefile:
 
-
 ```
 OMPFLAG = 
 CC = g++
 MPI_CC = mpic++
 CFLAGS = -Ofast
 ```
+
+# Notes on build.sh file
+
+In the build.sh file, one will find two ways to run the bitonic.cpp file. This due to my compute nodes not being accessible, and being unable to setup the cluster again after that.
+
+I ran the command
+```
+mpirun ./bitonic 2>&1 | tee ./run.log
+```
+
+If my my compute nodes did not have  a Slurm connection error, I would have run:
+```
+salloc -n 4 -N 2 
+prun mpirun ./bitonic 2>&1 | tee ./run.log
+```
+
+This would have resulted in better times, but I do belive that the optimization flags chosen are effective ones.
 
 # Notes on outcome
 
