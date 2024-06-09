@@ -29,7 +29,7 @@ mpirun ./bitonic 2>&1 | tee ./run.log
 If my my compute nodes did not have  a Slurm connection error, I would have run:
 ```
 salloc -n 4 -N 2 
-prun mpirun ./bitonic 2>&1 | tee ./run.log
+prun ./bitonic 2>&1 | tee ./run.log
 ```
 
 This would have resulted in better times, but I do belive that the optimization flags chosen are effective ones.
