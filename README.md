@@ -37,7 +37,7 @@ If my my compute nodes did not have  a Slurm connection error, I would have run:
 salloc -n 4 -N 2 
 prun mpirun ./bitonic 2>&1 | tee ./run.log
 ```
-I asked a friend who also did the virtual cluster to run this code. The output of that is:
+I asked a friend who also did the virtual cluster to run the prun configuration. The output of that is:
 ```
 [test@smshost ~]$ bash build.sh 
 mpich is installed.
