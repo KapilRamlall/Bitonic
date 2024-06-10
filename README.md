@@ -30,7 +30,7 @@ I ran the command
 ```
 mpirun ./bitonic 2>&1 | tee ./run.log
 ```
-This game me a time of approximately 899ms which is what I sent in my run file. I ran this on the head node alone with the gien optimization flags.
+This game me a time of approximately 899ms which is what I sent in my run file. I ran this on the head node alone with the given optimization flags.
 
 If my my compute nodes did not have  a Slurm connection error, I would have run:
 ```
