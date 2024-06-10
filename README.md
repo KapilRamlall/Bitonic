@@ -1,6 +1,3 @@
-This can be found, as is nicer to read, on the github repositoty below:
-https://github.com/KapilRamlall/Bitonic.git
-
 # Requirements to run
 
 Ensure that the MPICH module is loaded. If it is not, the script will stop.
