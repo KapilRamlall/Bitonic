@@ -71,9 +71,9 @@ This would have resulted in better times, but I do belive that the optimization 
 
 # Notes on outcome
 
-In my attempt to set up a virtual cluster for computing tasks, I made several efforts, totaling nine, to get it up and running. Unfortunately, success was elusive, achieved only once in the early stages of my endeavor.
+In my attempt to set up a virtual cluster for computing tasks, I made several efforts, totaling nine, to get it up and running. Unfortunately, success was elusive, and I only had the cluster running on my third attempt.
 
-On the third try, after multiple adjustments to configurations, the cluster finally came online. However, it wasn't smooth sailing. Unexpectedly, the nodes, essential for distributing tasks, encountered issues connecting to the Slurm scheduler. This left them idle, rendering the cluster ineffective.
+On the third try, after multiple adjustments to configurations, the cluster finally came online. The cluster worked for a while which is when I took my screenshots of vagrant status. Unexpectedly, the nodes encountered issues connecting to the Slurm scheduler. This left them idle, rendering the cluster ineffective.
 
 In an effort to salvage the situation, I ran the Bitonic Sort program with optimization flags on the head node. While it did run successfully, it took 899 milliseconds to complete. Through this experience, I gained insights into the significance of optimization flags such as "-Ofast" and "mpic++" in enhancing program performance. These flags, when used appropriately, can significantly improve the efficiency of computational tasks.
 Attempting to rectify the node connectivity issue, I tried to redo the project. Unfortunately, this led to the notorious permission error that proved troublesome to resolve, despite my efforts to troubleshoot it.
